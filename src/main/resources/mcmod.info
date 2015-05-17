@@ -1,0 +1,16 @@
+[
+{
+  "modid": "notimefix",
+  "name": "No Time Fix",
+  "description": "Because who has time to debug?",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["CanVox"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
