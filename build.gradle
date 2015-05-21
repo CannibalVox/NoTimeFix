@@ -15,15 +15,15 @@ buildscript {
     }
 }
 
+defaultTasks 'build'
 apply plugin: 'forge'
 
-version = "1.0"
+version = "2.0"
 group= "net.technicpack" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "notimefix"
 
 minecraft {
     version = "1.7.10-10.13.2.1291"
-    runDir = "eclipse"
 }
 
 dependencies {
@@ -61,3 +61,15 @@ processResources
         exclude 'mcmod.info'
     }
 }
+
+def manifestEntries = [
+        "Built-By": System.properties['user.name'],
+        "Created-By": System.properties['java.vm.version'] + " (" + System.properties['java.vm.vendor'] + ")",
+        "FMLCorePlugin": "net.technicpack.notimefix.coremod.NoTimeFixCoremod",
+        "FMLCorePluginContainsFMLMod": 'true'
+]
+
+jar {
+    manifest.mainAttributes(manifestEntries)
+}
+
