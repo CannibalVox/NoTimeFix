@@ -15,7 +15,7 @@ public class QuestingDataMixin {
             String name = teammate.getName();
             if (QuestingData.data.containsKey(name)) {
                 QuestingData teammatePlayer = (QuestingData)QuestingData.data.get(name);
-                if (teammatePlayer.getTeam().getId() == -1)
+                if (teammatePlayer.getTeam().getId() != team.getId())
                     QuestingData.data.remove(name);
             }
         }
