@@ -7,8 +7,6 @@ import java.util.Map;
 public class NoTimeFixCoremod implements IFMLLoadingPlugin {
 
     public NoTimeFixCoremod() {
-        int i = 0;
-        i = i;
     }
 
     @Override
