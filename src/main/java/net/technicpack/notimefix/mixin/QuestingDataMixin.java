@@ -12,6 +12,10 @@ public class QuestingDataMixin {
 
         for (Object teammateObj : team.getPlayers()) {
             Team.PlayerEntry teammate = (Team.PlayerEntry)teammateObj;
+
+            if (!teammate.isInTeam())
+                continue;
+
             String name = teammate.getName();
             if (QuestingData.data.containsKey(name)) {
                 QuestingData teammatePlayer = (QuestingData)QuestingData.data.get(name);
