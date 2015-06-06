@@ -11,7 +11,7 @@ import net.technicpack.notimefix.coremod.NoTimeFixResourcePack;
 public class NoTimeFix extends DummyModContainer {
     public static final String MODID = "notimefix";
     public static final String MODNAME = "No Time Fix";
-    public static final String VERSION = "2.0.2";
+    public static final String VERSION = "2.0.3";
 
     public NoTimeFix() {
         super(new ModMetadata());
